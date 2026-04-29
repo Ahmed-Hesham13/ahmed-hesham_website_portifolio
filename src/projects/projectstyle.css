@@ -1,0 +1,94 @@
+.text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.8px;
+     color: ghostwhite;
+}
+.text2{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+     color: ghostwhite;
+}
+.proj-img {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.proj-img img {
+    width: 100%;
+    height: auto;
+}
+
+.proj-txtx {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90.21deg, rgb(28, 97, 57),rgb(223, 210, 210));
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.proj-img:hover .proj-txtx {
+    opacity: 0.85;
+}
+
+.proj-txtx h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+
+.proj-txtx span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+#pills-tab {
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 50px auto; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+}
+.first-tab{
+   color: #fff ;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+.second-tab{
+    color: ghostwhite;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+.third-tab{
+    color: ghostwhite;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+.nav-link{
+    background-color:rgb(105, 168, 120);
+}
+.nav-link.active {
+    background-color: rgb(28, 97, 57);
+}

@@ -1,0 +1,118 @@
+.contact {
+  background: linear-gradient(90deg, #121212 0%, #1a1a1a 100%);
+  padding: 60px 0 200px 0;
+  position: relative;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contact img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+@keyframes updown {
+    0% { transform: translateY(-20px); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(-20px); }
+}
+
+.contact form input, 
+.contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact form input:focus, 
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+
+.contact form input::placeholder, 
+.contact form textarea::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.contact form input:focus::placeholder, 
+.contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+
+.contact form button:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.contact form button::before {
+  content: "";
+  background: #682424;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.contact form button:hover::before {
+  width: 100%;
+}
+
+.contact p.danger {
+  color: #f8d7da;
+  background: #721c24;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contact p.success {
+  color: #d1e7dd;
+  background: #0f5132;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 36px;
+  }
+  .contact img {
+    margin-bottom: 40px;
+  }
+}
